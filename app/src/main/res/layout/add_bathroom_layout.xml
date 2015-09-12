@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#665c64"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/location"
+        android:id="@+id/locationView"
+        style="@style/titles"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputLocation"
+        style="@style/inputs"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        style="@style/inputs"
+        android:id="@+id/inputDirection"
+        android:autoText="false"
+        android:contentDescription="Miguel Miramón 791, La Minita, 25170 Saltillo, Coah., Mexico"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/services"
+        android:id="@+id/servicesView"
+        style="@style/titles"/>
+
+    <TableLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="250dp"
+                 android:shrinkColumns="0"
+        android:background="#fff"
+        android:stretchColumns="0"
+        >
+
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/manWoman_text"
+                android:id="@+id/manWomanText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+
+                android:id="@+id/mix_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/handicap_text"
+                android:id="@+id/handicapText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/handicap_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/baby_text"
+                android:id="@+id/babyText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/baby_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/paper_text"
+                android:id="@+id/paperText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/paper_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/free_text"
+                android:id="@+id/freeText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/free_switch"/>
+        </TableRow>
+
+        <TableRow style="@style/tableRow">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/water_text"
+                android:id="@+id/waterText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:id="@+id/water_switch"/>
+
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/starsBar"
+            android:stepSize="1"
+            android:rating="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancelButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/saveButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

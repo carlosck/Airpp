@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/map"
+          tools:context=".MapsActivity"
+          android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:id="@+id/addButton"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"/>
+
+   <LinearLayout
+       android:id="@+id/drag_container"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="60dp"
+       android:layout_alignParentTop="true"
+       android:visibility="invisible">
+
+       <Button
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="@string/cancel"
+           android:id="@+id/dragCancel"
+           android:layout_marginEnd="10dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+
+           />
+       <Button
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="@string/ok_button"
+           android:id="@+id/dragOK"
+           android:layout_marginEnd="10dp"
+
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"/>
+   </LinearLayout>
+
+   <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/drag_instructions"
+        android:text="@string/drag_instructions"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+       android:visibility="invisible"/>
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:id="@+id/detail_container"
+              android:orientation="vertical"
+        style="@style/detail_perfect">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/detail_title"
+        android:id="@+id/detail_title"
+        android:text="@string/bad_title"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/detail_location"
+        android:id="@+id/detail_location"
+        android:text="Doña invader"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/detail_direction"
+        android:id="@+id/detail_direction"
+        android:text="Obregon sur 1830 int 45 zona centro saltillo, coahuila Mx"
+        android:layout_gravity="center"
+        android:autoText="false"
+        android:elegantTextHeight="false"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:id="@+id/detail_table_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:stretchColumns="*"
+        >
+        <TableRow android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="@string/mix_text"
+                style="@style/detail_icons_title"
+                android:id="@+id/detail_icon_mix"
+
+                />
+
+            <TextView
+                android:text="@string/handicap_text"
+                style="@style/detail_icons_title"
+                android:id="@+id/detail_icon_handicap"
+                />
+            <TextView
+                android:text="@string/baby_text"
+                style="@style/detail_icons_title"
+                android:id="@+id/detail_icon_baby"
+                />
+
+            <TextView
+                android:text="@string/paper_text"
+                style="@style/detail_icons_title"
+                android:id="@+id/detail_icon_paper"
+                />
+
+            <TextView
+                android:text="@string/free_text"
+                style="@style/detail_icons_title"
+                android:id="@+id/detail_icon_free"
+                />
+            <TextView
+                android:text="@string/water_text"
+                style="@style/detail_icons_title"
+                android:id="@+id/detail_icon_water"
+                />
+        </TableRow>
+     </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/detail_stars_container"
+        >
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/starsBar"
+            android:stepSize="1"
+            android:rating="1"
+            android:isIndicator="true"/>
+    </LinearLayout>
+
+
+
+
+    <TableLayout
+        android:id="@+id/detail_table_review"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:shrinkColumns="0"
+        android:background="#fff"
+        android:stretchColumns="0"
+        >
+
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/manWoman_text"
+                android:id="@+id/manWomanText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+
+                android:id="@+id/mix_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/handicap_text"
+                android:id="@+id/handicapText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/handicap_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/baby_text"
+                android:id="@+id/babyText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/baby_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/paper_text"
+                android:id="@+id/paperText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/paper_switch"/>
+        </TableRow>
+        <TableRow style="@style/tableRow">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/free_text"
+                android:id="@+id/freeText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:id="@+id/free_switch"/>
+        </TableRow>
+
+        <TableRow style="@style/tableRow">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/water_text"
+                android:id="@+id/waterText"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:id="@+id/water_switch"/>
+
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/detail_buttons_container"
+
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancelButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/saveButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailReview"
+            android:text="@string/detail_review_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

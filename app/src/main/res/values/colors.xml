@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="likeblue">#073a47</color>
+    <color name="perfect">#71f3ff</color>
+    <color name="good">#96E312</color>
+    <color name="bad">#F1E350</color>
+
+</resources>

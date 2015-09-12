@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Airpp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_detail">Detalle</string>
+    <string name="add">Agregar</string>
+    <string name="location">Ubicación</string>
+    <string name="services">Servicios</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="manWoman_text">Sanitarios para mujer y hombre</string>
+    <string name="mix_text">Sanitarios mixto</string>
+    <string name="handicap_text">Acceso a discapacitados</string>
+    <string name="baby_text">Cambiador para bebé</string>
+    <string name="paper_text">Papel Higiénico</string>
+    <string name="free_text">Servicio gratuito</string>
+    <string name="water_text">Agua potable</string>
+    <string name="title_activity_save">SaveActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok_button">OK</string>
+    <string name="drag_instructions">Drag mark to the desire location, then click on "OK" button</string>
+    <string name="perfect_title">¡A gusto!</string>
+    <string name="good_title">si se hace</string>
+    <string name="bad_title">¡No vuelvo!</string>
+    <string name="detail_review_button">Calificar</string>
+
+</resources>
